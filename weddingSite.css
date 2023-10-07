@@ -100,7 +100,7 @@ header {
     align-items: center;
 }
 
-form {
+#formWrapper {
     display: none;
 }
 
