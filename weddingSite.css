@@ -111,6 +111,10 @@ form {
 
 .rsvp-form {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #formSubmit {
