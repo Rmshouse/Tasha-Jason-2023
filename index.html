@@ -41,21 +41,18 @@
             </section>
 
             <section id="formWrapper" class="form-wrapper">
-                <form 
-                method="POST" 
-                action="https://script.google.com/macros/s/AKfycbyayd6ygd8Uzhmd0agEVOW4XwN8nplqnLFK1xs4UjXaKYYPz_k-yR5Ej-RIRexaz0SAkw/exec" 
-                id="rsvpForm" class="rsvp-form">
-                    <h3>Please fill out</h3>
-                    <label for="attending">Will you be attending?</label>
-                    <input name="Attending" type="text" id="attending">
-                    <br/>
-                    <label for="email">Valid Email</label>
-                    <p>This will be used to update you.</p>
-                    <input name="Email" type="email" id="email" placeholder="Email...">
-                    
-                    <p>Please enter names for each member of your party that will be attending.</p>
+                <h3>Please fill out</h3>
 
-                    <input name="Name" type="text" class="name" placeholder="Name...">
+                <form name="rsvpForm" id="rsvpForm" class="rsvp-form">
+                    <label for="attending">Will you be attending?</label>
+                    <input name="attending" type="text" id="attending">
+
+                    <label for="email">Valid Email<br/>This will be used to update you.</label>
+                    <input name="email" type="email" id="email" placeholder="Email...">
+        
+                    <label for="name">Please enter name for each person</label>
+                    <input name="name" type="text" class="name" placeholder="Name...">
+
                     <button type="button" id="addPerson">Add another person</button>
                     <button type="submit" id="submitRsvp" class="submit-rsvp">Submit RSVP</button>
                 </form>

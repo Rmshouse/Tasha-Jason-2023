@@ -105,8 +105,12 @@ input {
   margin: 5px;
 }
 
+label {
+  margin: 10px;
+}
+
 .submit-rsvp {
-  margin: 5px;
+  margin: 10px;
 }
 
 .fireworks-wrapper {

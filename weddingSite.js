@@ -16,6 +16,7 @@ addPerson.addEventListener("click", function() {
     let input = document.createElement("input");
     input.setAttribute("type", "text");
     input.setAttribute("placeholder", "Name...");
+    input.setAttribute("name", "name");
     rsvpForm.insertBefore(input, addPerson);
 })
 
@@ -29,19 +30,12 @@ submitRsvp.addEventListener("click", function() {
     }
 })
 
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzr4A1DLklr1kYV5ctojTzBWCBjUufVOpZ6t1Z9HdtJz1xJBcWhFgiGg1iePqY7-JIk9A/exec'
+  const form = document.forms['rsvpForm']
 
-window.addEventListener("load", function() {
-    const form = document.getElementById('rsvpForm');
-    form.addEventListener("submit", function(e) {
-      e.preventDefault();
-      const data = new FormData(form);
-      const action = e.target.action;
-      fetch(action, {
-        method: 'POST',
-        body: data,
-      })
-      .then(() => {
-        alert("Success!");
-      })
-    });
-});
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
