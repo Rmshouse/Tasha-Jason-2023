@@ -20,37 +20,56 @@
             <h1>Natasha & Jason</h1>
         </header>
 
-        <main id="main">
+        <main>
             <section id="welcome" class="welcome">
                 <img src="images/IMG_1217.png" alt="picture of the couple" width="175px" height="auto">
-            </section>
 
-            <section class="words-from-couple">
-                <p>You're invited to a night of fun, friends, and festivities.
-                    <br/><br/>
+                <p class="words-from-couple">You're invited to a night of fun, friends, and festivities.
+                    <br/>
+                    <br/>
                     Please join us for the wedding celebration of Natasha and Jason.
-                    <br/><br/>
+                    <br/>
+                    <br/>
                     Save the date, this <B><U>New Year's Eve</U></B> for our unconventional non-wedding, wedding party.
-                    <br/><br/>
-                    Your presence will make it an unforgettable celebration.
-                    <br/><br/>
-                    Bring on the good vibes!</p>
+                    <br/>
+                    <br/>
+                    Your presence will make it an unforgettable celebration.</p>
+
+                    <span class="button-wrapper">
+                        <button type="button" id="openRsvp"><b>Bring on the good vibes!</b></button>
+                    </span>
             </section>
 
-            <span class="button-wrapper">
-                <button type="button" id="openRsvp"><b>RSVP!</b></button>
-            </span>
+            <section id="formWrapper" class="form-wrapper">
+                <form method="post" 
+                action="https://script.google.com/macros/s/AKfycbyayd6ygd8Uzhmd0agEVOW4XwN8nplqnLFK1xs4UjXaKYYPz_k-yR5Ej-RIRexaz0SAkw/exec" 
+                id="rsvpForm" class="rsvp-form">
+                    <h3>Please fill out</h3>
+                    <label for="attending">Will you be attending?</label>
+                    <input name="Attending" type="text" id="attending">
+                    <br/>
+                    <label for="email">Valid Email</label>
+                    <p>This will be used to update you.</p>
+                    <input name="Email" type="email" id="email" placeholder="Email...">
+                    
+                    <p>Please enter names for each member of your party that will be attending.</p>
 
-            <div id="fireworks" class="pyro">
+                    <input name="Name" type="text" class="name" placeholder="Name...">
+                    <button type="button" id="addPerson">Add another person</button>
+                    <button type="submit" id="submitRsvp" class="submit-rsvp">Submit RSVP</button>
+                </form>
+            </section>
+
+        </main>
+
+        <section id="fireworks" class="fireworks-wrapper">
+            <h2>Congratulations!</h2>
+            <p>Your RSVP has been sent.</p>
+            <p>Any new information about the party will be sent to the provided email.</p>
+            <div class="pyro">
                 <div class="before"></div>
                 <div class="after"></div>
             </div>
-        </main>
-
-        <section id="formWrapper">
-            <section id="rsvpForm" class="rsvp-form">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScG2KBcSu9COD_91ipLA3I9qSWcjdpzUSU0aFjONqII7hspMQ/viewform?embedded=true" width="300" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-            </section>
         </section>
 
         <footer>
