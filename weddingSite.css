@@ -114,11 +114,14 @@ label {
 }
 
 .submit-rsvp {
-  margin: 10px;
+  position: absolute;
+  bottom: 20%;
+  left: 50;
 }
 
 .fireworks-wrapper {
   display: none;
+  margin: 20%;
 }
 
 .pyro > .before, .pyro > .after {
@@ -366,4 +369,9 @@ label {
       margin-left: 80%; 
     } 
 }
-  
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
