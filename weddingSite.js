@@ -9,17 +9,6 @@ openRsvp.addEventListener("click", function() {
     }
 })
 
-const addPerson = document.getElementById("addPerson");
-const rsvpForm = document.getElementById("rsvpForm");
-
-addPerson.addEventListener("click", function() {
-    let input = document.createElement("input");
-    input.setAttribute("type", "text");
-    input.setAttribute("placeholder", "Name...");
-    input.setAttribute("name", "name");
-    rsvpForm.insertBefore(input, addPerson);
-})
-
 let submitRsvp = document.getElementById("submitRsvp");
 let fireworks = document.getElementById("fireworks");
 

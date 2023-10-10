@@ -45,7 +45,7 @@
 
                 <form name="rsvpForm" id="rsvpForm" class="rsvp-form">
                     <label for="attending">Will you be attending?</label>
-                    <input name="attending" type="text" id="attending">
+                    <input name="attending" type="text" id="attending" placeholder="Yes or No...">
 
                     <label for="email">Valid Email<br/>This will be used to update you.</label>
                     <input name="email" type="email" id="email" placeholder="Email...">
@@ -53,7 +53,8 @@
                     <label for="name">Please enter name for each person</label>
                     <input name="name" type="text" class="name" placeholder="Name...">
 
-                    <button type="button" id="addPerson">Add another person</button>
+                    <label for="numberInParty" >How many will you be in your group?</label>
+                    <input name="party" type="text" class="party" placeholder="Number...">
                     <button type="submit" id="submitRsvp" class="submit-rsvp">Submit RSVP</button>
                 </form>
             </section>
